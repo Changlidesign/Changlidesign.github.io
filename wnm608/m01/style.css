@@ -1,0 +1,44 @@
+body {
+	background-color: white;
+}
+
+h1 {
+	background-color:#f2f2f2;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 50px;
+	color:red;
+	padding:60px;
+	text-align: left;
+
+}
+
+ul {
+	font-color:grey;
+	font-size:13px;
+	padding:30px;
+	padding-left:0px;
+    display: flex;
+	list-style: none;
+
+}
+dd{
+	font-size:15px;
+}
+ol{
+	font-size: 15px;
+}
+h2{
+	font-size:25px;
+	font-family: 'IBM Plex Sans', sans-serif;
+
+}
+a{color:grey;}
+li {
+    margin-right: 1em;
+    font-size: 1.2em;
+}
+div {
+    width: 90%;
+    font-family: 'Chilanka', cursive;
+    margin: 0 auto;
+}

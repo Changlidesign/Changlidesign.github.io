@@ -1,0 +1,90 @@
+[13-Apr-2020 23:32:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(69): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'animals_from_us...', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[13-Apr-2020 23:34:45 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(69): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'animals_from_us...', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[13-Apr-2020 23:42:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(69): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'animals_from_us...', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[13-Apr-2020 23:42:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(69): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'animals_from_us...', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[13-Apr-2020 23:57:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(69): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'animals_from_us...', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:15:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_p() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 56
+[14-Apr-2020 00:15:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_p() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 56
+[14-Apr-2020 00:16:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function print_p() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:56
+Stack trace:
+#0 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 56
+[14-Apr-2020 00:28:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(69): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'animals_from_us...', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:28:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(75): makeQuery(Object(mysqli), 'SELECT * FROM `...', 'i', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'user_by_id', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:29:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(83): makeQuery(Object(mysqli), 'SELECT `id` FRO...', 'ss', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'check_login', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(83): makeQuery(Object(mysqli), 'SELECT `id` FRO...', 'ss', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'check_login', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(83): makeQuery(Object(mysqli), 'SELECT `id` FRO...', 'ss', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'check_login', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(83): makeQuery(Object(mysqli), 'SELECT `id` FRO...', 'ss', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'check_login', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(83): makeQuery(Object(mysqli), 'SELECT `id` FRO...', 'ss', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'check_login', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32
+[14-Apr-2020 00:29:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined method mysqli_stmt::get_result() in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php:32
+Stack trace:
+#0 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(83): makeQuery(Object(mysqli), 'SELECT `id` FRO...', 'ss', Array)
+#1 /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php(103): makeStatement(Object(mysqli), 'check_login', Array)
+#2 {main}
+  thrown in /home/ijl4nu874e5e/public_html/aau/wnm617/m10/php/data.php on line 32

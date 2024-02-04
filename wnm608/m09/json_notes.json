@@ -1,0 +1,39 @@
+{
+	"users":[
+		{
+			"name":"Hamilton Cline",
+			"type":"Teacher",
+			"age":35
+		},
+		{
+			"name":"Chandler Bing",
+			"type":"No one knows",
+			"age":33
+		},
+		{
+			"name":"Phoebe Buffay",
+			"type":"Musician",
+			"age":34
+		},
+		{
+			"name":"Monica Gellar",
+			"type":"Chef",
+			"age":37
+		},
+		{
+			"name":"Joey Tribbiani",
+			"type":"Actor",
+			"age":34
+		},
+		{
+			"name":"Rachel Green",
+			"type":"Fashion",
+			"age":32
+		},
+		{
+			"name":"Ross Gellar",
+			"type":"Professor",
+			"age":35
+		}
+	]
+}

@@ -1,0 +1,7 @@
+.product-listimage img {
+    width: 100px;
+}
+.product-mainimage img,
+.product-otherimages img {
+    width: 200px;
+}

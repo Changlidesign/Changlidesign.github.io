@@ -1,0 +1,47 @@
+{
+	"notes":[
+		"NO COMMENTS IN A JSON FILE",
+		"One top level object or array",
+		"[] an array, {} an object",
+		"Commas go BETWEEN items in an array or object",
+		"All object property names must have quote marks",
+		"All string quote marks must be double quotes"
+	],
+	"users":[
+		{
+			"name":"Hamilton Cline",
+			"type":"Teacher",
+			"age":35
+		},
+		{
+			"name":"Chandler Bing",
+			"type":"No one knows",
+			"age":33
+		},
+		{
+			"name":"Phoebe Buffay",
+			"type":"Musician",
+			"age":34
+		},
+		{
+			"name":"Monica Gellar",
+			"type":"Chef",
+			"age":37
+		},
+		{
+			"name":"Joey Tribbiani",
+			"type":"Actor",
+			"age":34
+		},
+		{
+			"name":"Rachel Green",
+			"type":"Fashion",
+			"age":32
+		},
+		{
+			"name":"Ross Gellar",
+			"type":"Professor",
+			"age":35
+		}
+	]
+}

@@ -1,0 +1,100 @@
+h1 { 
+  display: block;
+  font-size: 45px;
+  margin-top: 200px;
+  margin-bottom:15px;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  color: #e60000;
+}
+body {
+  background-color:  #ffe680;
+}
+#rps_buttons, #rps_result{
+    width:50%;
+    min-width: 100px;
+    margin:0 auto;
+    position:relative;
+    top:45px;
+}
+#cat{
+	display: block;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 40px;
+  font-family: 'Asap', sans-serif;
+}
+#dog{
+	display: block;
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 40px;
+  font-family: 'Asap', sans-serif;
+}
+#bone{
+	display: block;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 40px;
+  font-family: 'Asap', sans-serif;
+}
+#again{
+	display: block;
+  font-size: 15px;
+  margin:5% auto;
+  color:black;
+  font-family: 'Asap', sans-serif;
+}
+div{
+    
+    margin:50% auto;
+    text-align: center;
+}
+button {
+    border-radius:0;
+	border-width:0;
+}
+.rps_btn{
+	display:inline-block;
+	width:200px;
+	height:200px;
+	background-repeat:no-repeat;
+    padding:5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color:  #ffe680;
+}
+.btn_gift1 {
+	background-image:url(gift1.svg);
+    transition: all 1s;
+}
+.btn_gift2 {
+	background-image:url(gift2.svg);
+    transition: all 1s;
+   
+}
+.btn_gift3 {
+	background-image:url(gift3.svg);
+    transition: all 1s;
+  
+}
+
+.btn_gift1:hover {
+    transform: rotate(360deg) scale(2);
+    background-color: #ffe680;
+
+}
+.btn_gift2:hover {
+    transform: rotate(360deg) scale(2);
+    background-color: #ffe680;
+}
+.btn_gift3:hover {
+    transform: rotate(360deg)scale(2);
+    background-color: #ffe680;
+}

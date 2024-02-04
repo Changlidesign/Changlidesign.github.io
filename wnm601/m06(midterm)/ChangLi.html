@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Asap" rel="stylesheet">
+<style>
+h1 { 
+  display: block;
+  font-size: 45px;
+  margin-top: 200px;
+  margin-bottom:15px;
+  font-weight: bold;
+  font-family: 'Fredoka One', cursive;
+  color: #e60000;
+}
+body {
+  background-color:  #ffe680;
+}
+#rps_buttons, #rps_result{
+    width:50%;
+    min-width: 100px;
+    margin:0 auto;
+    position:relative;
+    top:45px;
+}
+#cat{
+	display: block;
+  font-size: 30px;
+  margin-top: 40px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 40px;
+  font-family: 'Asap', sans-serif;
+}
+#dog{
+	display: block;
+  font-size: 30px;
+  margin-top: 50px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 40px;
+  font-family: 'Asap', sans-serif;
+}
+#bone{
+	display: block;
+  font-size: 30px;
+  margin-top: 10px;
+  font-weight: bold;
+  color:black;
+  margin-bottom: 40px;
+  font-family: 'Asap', sans-serif;
+}
+#again{
+	display: block;
+  font-size: 15px;
+  margin:5% auto;
+  color:black;
+  font-family: 'Asap', sans-serif;
+}
+div{
+    
+    margin:50% auto;
+    text-align: center;
+}
+button {
+    border-radius:0;
+	border-width:0;
+}
+.rps_btn{
+	display:inline-block;
+	width:200px;
+	height:200px;
+	background-repeat:no-repeat;
+    padding:5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color:  #ffe680;
+}
+.btn_gift1 {
+	background-image:url(gift1.svg);
+    transition: all 1s;
+}
+.btn_gift2 {
+	background-image:url(gift2.svg);
+    transition: all 1s;
+   
+}
+.btn_gift3 {
+	background-image:url(gift3.svg);
+    transition: all 1s;
+  
+}
+
+.btn_gift1:hover {
+    transform: rotate(360deg) scale(2);
+    background-color: #ffe680;
+
+}
+.btn_gift2:hover {
+    transform: rotate(360deg) scale(2);
+    background-color: #ffe680;
+}
+.btn_gift3:hover {
+    transform: rotate(360deg)scale(2);
+    background-color: #ffe680;
+}
+
+</style>
+	<title></title>
+</head>
+<body>
+<h1 align="center">Pick out your little pet!</h1>
+
+<div id="rps_buttons">
+	<button class="rps_btn btn_gift1"></button>
+	<button class="rps_btn btn_gift2"></button>
+	<button class="rps_btn btn_gift3"></button>
+</div>
+<div id="rps_result" class=""></div>
+<script>
+// VARIABLES AT THE TOP
+let options = 
+	["cat.svg","dog.svg","bone.svg"];
+let computerchoice;
+let result, buttons;
+let occur = new Set();
+
+// FUNCTIONS AFTER VARIABLES
+function makeComputerChoice(){
+	console.log("Computer was",computerchoice);
+	return computerchoice = my_random();   
+}
+
+function my_random() {
+	if (occur.size == options.length) {
+		occur.clear();
+	}
+
+	var computerchoice;
+	while (true) {
+		computerchoice = Math.floor( Math.random() * options.length );
+		if (!occur.has(computerchoice)) {
+			break;
+		}
+	}
+	occur.add(computerchoice);
+	return computerchoice;
+}
+/* Dont need this part, just to see what computer is doing
+function showComputerChoice(){
+	document.write(options[computerchoice])
+}
+makeComputerChoice ();
+showComputerChoice ();
+===== END of testing======*/
+function makeUserChoice(choice){
+	makeComputerChoice();// makeComputerChoice when user made a choice
+	//  show the options in console
+	console.log(
+		options[computerchoice]
+	);
+	//  show the options on the document
+	result.innerHTML =
+		"<img src='"+
+			options[computerchoice]+"' width='260' height='260' margin-top='1'>";
+
+	makeGameResult();
+}
+function makeGameResult(){
+	let resultstring = "";
+	 if(
+		(computerchoice == 0)
+		) {
+		console.log("Wow! You got a cat!");
+		resultstring="<div id='cat'>Wow! You got a cat!</div>";
+	}
+	else if(
+		(computerchoice == 1)
+		) {
+		console.log("Wow! You got a dog!");
+		resultstring="<div id='dog'>Wow! You got a dog!</div>";
+	}
+	else if( 
+		(computerchoice == 2)
+        
+		) {
+		console.log("Sorry! You got a bone!");
+		resultstring="<div id='bone'>Sorry! You got a bone!</div>";
+	}
+	
+
+	result.innerHTML += 
+		resultstring+
+		"<div id='again'><button id='again' onclick='showOptions()'>Want To Choose Again?</button></div>";
+	showResults();
+}
+//Show and hide the 3 buttons. When showing results, show play agian button; Click play button, show three options.
+function showOptions(){
+	buttons.style.display = "block";
+	result.style.display = "none";
+}
+function showResults(){
+	buttons.style.display = "none";
+	result.style.display = "block";
+}
+
+
+// model view controller MVC
+
+// Everything is set up ready to go. Let the browser display your buttons. By default, showOptions() will display buttons and hide the result.
+// Since we put our js on top, we need to add onload 
+window.onload = function(){
+	result = document.querySelector("#rps_result");
+	buttons = document.querySelector("#rps_buttons");
+    document.querySelector(".btn_gift1").addEventListener("click", function(){makeUserChoice(0);}, false)
+    document.querySelector(".btn_gift2").addEventListener("click", function(){makeUserChoice(1);}, false)
+    document.querySelector(".btn_gift3").addEventListener("click", function(){makeUserChoice(2);}, false)
+}
+</script>
+
+</body>
+</html>

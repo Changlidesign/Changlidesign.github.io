@@ -1,0 +1,2 @@
+[22-Oct-2020 09:27:14 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'miowebte_wnm608m'@'localhost' (using password: YES) in /home/ijl4nu874e5e/public_html/wnm608/m11/cms/dbConnection.php on line 8
+[17-Nov-2020 14:44:43 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'miowebte_wnm608m'@'localhost' (using password: YES) in /home/ijl4nu874e5e/public_html/wnm608/m11/cms/dbConnection.php on line 8

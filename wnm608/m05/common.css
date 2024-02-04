@@ -1,0 +1,319 @@
+/* TAG REDEFINITIONS */
+
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin:0;
+	font-size:100%;
+	font-family:helvetica,arial,sans-serif;
+}
+
+a {
+	color:inherit;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+
+
+
+/* COMMON CLASSES */
+
+.container {
+	max-width:1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.centered-child {
+	position:absolute;
+	top:50%;
+	left:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+}
+
+
+
+.flex-parent {
+	display:-webkit-flex;
+	display:flex;
+}
+.flex-child {
+	flex:1 1 auto;
+}
+.flex-none {
+	flex:none;
+}
+
+.logo{
+	max-width:40%;
+	margin-top:3%;
+}
+.card {
+	background-color:white;
+	padding:10px;
+	border-radius:5px;
+	margin:1em 0;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+.card>:first-child {
+	margin-top:0;
+}
+.card>:last-child {
+	margin-bottom:0;
+}
+
+
+.view-window {
+	height:50vh;
+	background-size:cover;
+	background-position:center;
+	background-attachment:fixed;
+	position:relative;
+}
+.view-window-box {
+	height:calc(50vh - 100px);
+	width:calc(50vw - 100px);
+	text-align:center;
+}
+.view-description {
+	position:absolute;
+	width: 50vw;
+	background-color: rgba(238,238,238,0.7);
+}
+.view-window-box img {
+	max-height:100%;
+	max-width:100%;
+}
+.view-window>img {
+	max-height:calc(100% - 100px);
+	max-width:calc(100% - 100px);
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+
+
+
+.dual-box {
+
+}
+.dual-box img{
+	max-width:100%;
+}
+.dual-box .box {
+	width:50%;
+	flex:1 1 auto;
+	padding:30px;
+	position:relative;
+}
+.dual-box h2, 
+.dual-box p {
+	margin:0;
+}
+.dual-box.flipped .box:nth-child(1) {
+	order:2;
+}
+.dual-box.flipped .box:nth-child(2) {
+	order:1;
+}
+
+
+
+
+
+
+
+
+ /* COMPONENTS */
+
+.nav {
+
+}
+.nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.nav a {
+	padding:0.2em 0.5em;
+	display:block;
+	color:green;
+}
+
+.nav a:hover {
+	color:white;
+	text-decoration:none;
+	background-color:rgba(0,128,0,0.5);
+}
+.nav .active a {
+	color:white;
+	text-decoration:none;
+	background-color:green;
+}
+
+
+.nav-horizontal ul {
+	display:flex;
+}
+.nav-horizontal li {
+	flex:1 1 auto;
+	text-align:center;
+}
+
+
+.nav-pills li {
+	display:inline-block;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.nav-pills a {
+	border-radius:0.6em;
+}
+
+
+
+.nav-tabs {
+	border-bottom:1px solid #ccc;
+}
+.nav-tabs li {
+	display:inline-block;
+	margin-right: 3px;
+	margin-left: 3px;
+}
+.nav-tabs a {
+	border-radius:0.4em 0.4em 0 0;
+}
+.nav-tabs a:hover {
+	background-color:#ccc;
+}
+.nav-tabs .active a {
+	border:solid #ccc;
+	border-width:1px 1px 0;
+	background-color:white;
+	color:green;
+}
+
+
+
+
+
+
+.table {
+	width:100%;
+	border-collapse:collapse;
+}
+.table th,
+.table td {
+	text-align:left;
+	vertical-align: top;
+}
+
+
+
+.table-striped tbody tr:nth-child(odd) {
+	background-color:rgba(0,0,0,0.1);
+}
+.table-striped tr:hover {
+	background-color:rgba(0,0,0,0.1);
+}
+.table-striped td:hover {
+	background-color:rgba(255,255,255,0.5);
+}
+
+
+
+.table-lined tr,
+.table-lined-horizontal tr {
+	border-bottom:1px solid black;
+}
+
+.table-lined th~th,
+.table-lined td~td,
+.table-lined-vertical th~th,
+.table-lined-vertical td~td {
+	border-left:1px solid black;
+}
+
+.table-lined,
+.table-outlined {
+	border:1px solid black;
+}
+
+
+/* Search box */
+.container h1 {
+    display: inline-block;
+}
+nav {
+    display: inline-block;
+    width: 60%;
+}
+ul {
+    list-style: none;
+    text-align: center;
+}
+li[class*="menu"] {
+    display: inline-block;
+    margin-left: 2.5rem;
+    font-size: 1.2rem;
+}
+
+/* product list box */
+.container .container {
+    margin-top: 4rem;
+    width: 800px;
+}
+
+/* checkbox counting */
+.products {
+    display: block;
+    height: 200px;
+    margin-bottom: 1rem;
+    clear: right;
+}
+.products img {
+    width: 120px;
+    float: left;
+    clear: left;
+    margin-right: 1rem;
+}
+.total-toggles {
+    margin: 1.5rem .5rem;
+    display: inline-block;
+    float: right;
+}
+.cart {
+    width: 30px;
+    float: right;
+    margin-top: 1rem;
+}
+/* toggle */
+.toggle th {
+    padding: 1em 0;
+    font-size: 2em;
+}
+.toggle tr td:nth-child(2) {
+    font-size: 1.5rem;
+}
+/* radio tabs */
+.chooser {
+    margin-bottom: 1rem;
+}
+.six{
+max-width:80%;
+margin-top:15%;
+margin-left:40%;
+}
+
+
+

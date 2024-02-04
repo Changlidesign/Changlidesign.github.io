@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif:500');
+@media screen and (min-width: 375px){
+.logo{
+  width:10%;
+  height:auto;
+  float:left;
+}
+}
+ul {
+  list-style-type: none;
+  padding-left:10px;
+  padding-top:15px;
+  padding-bottom:10px;
+  overflow: hidden;
+  border: 0px solid white;
+  background-color:white;
+  position:relative;
+   width:99%;
+   font-weight:bolder;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #7b52ad;
+  text-align: center;
+  padding: 12px 14px;
+  text-decoration: none;
+  position:relative;
+  font-family:  'IBM Plex Serif', serif;
+  font-size: 100%;
+  font-weight:bolder;
+}
+
+li a:hover:not(.home) {
+  background-color: #ddd;
+}
+
+li a.home {
+  color: white;
+  background-color: #7b52ad;
+  background-size:auto;
+}
+.picker .main-image img {
+    width:70%;
+    margin-bottom:4%;
+    margin-top:4%;
+    margin-left:15%;
+    margin-right:15%;
+  }
+  @media screen and (min-width: 375px){
+  .picker .thumbstrip img{
+    width:13%;
+  }
+  .one{
+    margin-left:15%;
+  }
+  .six{
+    margin-right:13%;
+  }
+}
+  .h1{
+    font-size:3.4vw;
+    margin-left:15%;
+    margin-right:15%;
+    font-family:  'IBM Plex Serif', serif;
+
+  }
+  .h1two{
+    font-size:3.4vw;
+    margin-left:15%;
+    margin-right:15%;
+    font-family:  'IBM Plex Serif', serif;
+
+  }
+  h2{
+    font-size:1.5vw;
+    margin-left:15%;
+    margin-right:14%;
+    font-family:  'IBM Plex Serif', serif;
+    
+
+  }
+  p{
+    font-size:1.01vw;
+  margin-left:15%;
+  margin-right:14%;
+  margin-top:2%;
+  font-family:  'IBM Plex Serif', serif;
+ 
+  }

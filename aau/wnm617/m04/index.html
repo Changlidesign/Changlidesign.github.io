@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Animal tracker</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/app.css">
+
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/login.js"></script>
+	
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+	<section data-role="page" id="login-page">
+		<div data-role="main">
+			
+			<form id="login-form" data-ajax="false">
+				<img src="img/hamster.png" class="logo">
+				<input type="text" placeholder="Username" data-role="none"  id="login-username">
+				<input type="password" placeholder="Password" data-role="none" id="login-password">
+				<div>
+					<input type="submit" class="login" value="Login" data-role="none"></div>
+					<div class="signup">
+					<a href="#signup-page"><small>Sign Up</small></a>
+				</div>
+				
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section data-role="page" id="signup-page">
+		<div data-role="main">
+			<form id="signup-form">
+				<div class="form-control">
+					<label for="signup-username" class="form-label">User Name</label>
+					<input class="form-input" type="text" placeholder="Type your Username" data-role="none" id="signup-username">
+				</div>
+				<div class="form-control">
+					<label for="signup-password" class="form-label">Pass Word</label>
+					<input class="form-input" type="password" placeholder="Type your Password" data-role="none" id="signup-password">
+				</div>
+				<div class="form-control">
+					<label for="signup-password2" class="form-label">Re Enter Pass Word</label>
+					<input class="form-input" type="password" placeholder="Type your Password" data-role="none" id="signup-password2">
+				</div>
+				<div class="form-control">
+					<a href="#recent-page" class="form-button">Signup</a>
+				</div>
+				<div class="form-control text-center">
+					<a href="#login-page"><small>Log In</small></a>
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section data-role="page" id="recent-page">
+		<header data-role="header">
+			<h1>Recent Locations</h1>
+		</header>
+		<div data-role="main">
+			MAP
+		</div>
+		<footer data-role="footer" data-template="#footer-nav-template"></footer>
+	</section>
+
+	<section data-role="page" id="list-page">
+		<header data-role="header">
+			<h1>Animal List</h1>
+			<ul>
+				<li class="flex-stretch"></li>
+				<li><a href="#" data-activate="#list-add-modal">+</a></li>
+			</ul>
+		</header>
+		<div data-role="main">
+			<div class="scrollable">
+				<!-- ul>li*10>{Dog $} -->
+				<ul>
+					<li>Dog 1</li>
+					<li>Dog 2</li>
+					<li>Dog 3</li>
+					<li>Dog 4</li>
+					<li>Dog 5</li>
+					<li>Dog 6</li>
+					<li>Dog 7</li>
+					<li>Dog 8</li>
+					<li>Dog 9</li>
+					<li>Dog 10</li>
+					<li>Dog 1</li>
+					<li>Dog 2</li>
+					<li>Dog 3</li>
+					<li>Dog 4</li>
+					<li>Dog 5</li>
+					<li>Dog 6</li>
+					<li>Dog 7</li>
+					<li>Dog 8</li>
+					<li>Dog 9</li>
+					<li>Dog 10</li>
+					<li>Dog 1</li>
+					<li>Dog 2</li>
+					<li>Dog 3</li>
+					<li>Dog 4</li>
+					<li>Dog 5</li>
+					<li>Dog 6</li>
+					<li>Dog 7</li>
+					<li>Dog 8</li>
+					<li>Dog 9</li>
+					<li>Dog 10</li>
+					<li>Dog 1</li>
+					<li>Dog 2</li>
+					<li>Dog 3</li>
+					<li>Dog 4</li>
+					<li>Dog 5</li>
+					<li>Dog 6</li>
+					<li>Dog 7</li>
+					<li>Dog 8</li>
+					<li>Dog 9</li>
+					<li>Dog 10</li>
+				</ul>
+			</div>
+		</div>
+		<footer data-role="footer" data-template="#footer-nav-template"></footer>
+
+		<div class="modal" id="list-add-modal">
+			<div class="modal-back" data-deactivate="#list-add-modal"></div>
+			<div class="modal-popup">
+				<div class="modal-head">
+					yup
+				</div>
+				<div class="modal-body">
+					yup
+				</div>
+				<div class="modal-foot">
+					yup
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section data-role="page" id="profile-page">
+		<div data-role="main">
+			User Profile
+			<div>
+				<a href="#profile-edit-page">Edit Profile</a>
+			</div>
+		</div>
+		<footer data-role="footer" data-template="#footer-nav-template"></footer>
+	</section>
+
+	<section data-role="page" id="profile-edit-page">
+		<header data-role="header">
+			<h1>Edit User Profile</h1>
+			<ul>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Cancel</a>
+				</li>
+				<li class="flex-stretch"></li>
+				<li class="flex-none">
+					<a href="#" data-rel="back">Done</a>
+				</li>
+			</ul>
+		</header>
+		<div data-role="main">
+			User Profile Form
+		</div>
+	</section>
+
+
+
+
+
+	<script type="text/template" id="footer-nav-template">
+	<ul>
+		<li><a href="#recent-page">Recent</a></li>
+		<li><a href="#list-page">List</a></li>
+		<li><a href="#profile-page">Profile</a></li>
+	</ul>
+	</script>
+	
+</body>
+</html>

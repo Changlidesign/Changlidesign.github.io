@@ -1,0 +1,31 @@
+
+body{margin:0}
+
+
+.img-responsive{display:block;max-width:100%;height:auto}
+
+@media (min-width:768px)
+{.col-sm-6{float:left
+}
+.col-sm-6{width:50%
+}
+.row:after,
+.row:before{
+	display:table;content:" "
+
+}
+.row:after{
+	clear:both
+}
+
+
+*{
+	box-sizing:border-box}
+
+body {
+	margin:0
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	color: #6c7279;
+}
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Index page</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="carousel.css">
+
+</head>
+
+<body>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="grid.css">
+	<link rel="stylesheet" href="product.css">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+	$(".toggle input").on("change",function(){
+		$(".total-toggles").html($(".toggle input:checked").length)
+	})
+})
+</script>
+</head>
+<body class="searchbox">
+		<nav>
+			<ul>
+				<a href="index.html">
+		            <input type="image" src="one.png" class="logo">
+		        </a>
+				<li class="menu1"><a href="index.html">Home</a></li>
+				<li class="menu2"><a href="Products.html">Products</a></li>
+				<li class="menu3"><a href="carts.html">
+          <span class="cart-title">Cart</span>
+            <span class="badge cart-amount"></span></a></li>
+				<li class="menu4"><a href="index.html">Contact us</a></li>
+			</ul>	
+		</nav>
+		<div class="search-button">
+			<input type="checkbox" id="search-button1">
+			<label for="search-button1"><img src="search-icon.svg"></label>
+			<input type="search">
+		</div>
+		
+	</div>
+
+	<div class="carousel">
+      <div class="carousel-deck">
+        <div class="carousel-slide" style="background-image:url('eleven.jpg')">
+        	<div class="hero-text">
+                    <h1 class="h1">Welcome to the YIMI</h1>
+                    
+                    <a class="text" href="Products.html">See more</a>
+                </div>
+            </div>
+        
+        <div class="carousel-slide" style="background-image:url('three.jpg')">
+        	<div class="hero-text">
+                    <h1 class="h1">Welcome to the YIMI</h1>
+                    <a class="text" href="Products.html">See more</a>
+                </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <div class="carousel-control carousel-control-left">&lt;</div>
+        <div class="carousel-control carousel-control-right">&gt;</div>
+      </div>
+    </div>
+    <a href="Postcard.html">
+    <div class="carousel">
+      <div class="carousel-deck">
+        <div class="carousel-slide" style="background-image:url('eleven.jpg')">
+        	
+        </div>
+        <div class="carousel-slide" style="background-image:url('one.jpg')"></div>
+      </div></a>
+
+      <div class="carousel-controls">
+        <div class="carousel-control carousel-control-left">&lt;</div>
+        <div class="carousel-control carousel-control-right">&gt;</div>
+      </div>
+    </div>
+    <a href="Puzzle.html">
+    <div class="carousel">
+      <div class="carousel-deck">
+        <div class="carousel-slide" style="background-image:url('eleven.jpg')"></div>
+        <div class="carousel-slide" style="background-image:url('five.jpg')"></div>
+      </div></a>
+
+      <div class="carousel-controls">
+        <div class="carousel-control carousel-control-left">&lt;</div>
+        <div class="carousel-control carousel-control-right">&gt;</div>
+      </div>
+    </div>
+	
+    <script src="carousel.js"></script>
+</body>
+</html>
+
+</body>
+</html>

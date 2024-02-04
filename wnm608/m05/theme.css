@@ -1,0 +1,107 @@
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+header {
+	background-color:green;
+	color:white;
+	padding:10px;
+}
+
+header h1,
+header p {
+	margin:0;
+}
+
+a {
+	color:green;
+}
+
+
+
+
+.card dl:after {
+	content:'';
+	display:table;
+	clear:both;
+}
+.card dt {
+	font-weight:bold;
+	width:10em;
+	text-align:right;
+	padding-right:1em;
+	float:left;
+	clear:left;
+}
+.card dd {
+	width:calc(100% - 10em);
+	float:left;
+	margin:0;
+}
+
+
+
+
+img {
+	max-width:100%;
+}
+
+
+
+
+.btn {
+	background-color:transparent;
+	border:1px solid #ccc;
+	font-size:inherit;
+	font-family:inherit;
+	vertical-align: baseline;
+}
+.btn-full {
+	display:inline-block;
+	width:100%;
+}
+
+
+
+
+@media (max-width:800px) {
+
+	.card {
+		margin-left:10px;
+		margin-right:10px;
+	}
+}
+
+@media (max-width:500px) {
+
+	h1 {
+		font-size:1em;
+	}
+	h1+p {
+		display:none;
+	}
+
+	/*.dual-box .flex-parent {
+		display:block;
+	}
+	.dual-box .box {
+		flex:none;
+		width:100%;
+	}*/
+	.dual-box .flex-parent {
+		flex-direction:column;
+	}
+	.dual-box .box {
+		width:100%;
+	}
+	.dual-box.flipped .box:nth-child(1) {
+		order:1;
+	}
+	.dual-box.flipped .box:nth-child(2) {
+		order:2;
+	}
+	.dual-box .box .centered-child {
+		position:relative;
+	}
+}
+

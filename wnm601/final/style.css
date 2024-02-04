@@ -1,0 +1,197 @@
+@media screen and (min-width: 375px){
+.logo{
+  width:10%;
+  height:auto;
+}
+}
+
+@media only screen and (max-width: 640px){
+	li {
+	  display: inline-block;
+	  float: right;
+	  font-size: 7;
+	}
+}
+
+h1{
+  font-size:48.3px;
+  font-family:  'IBM Plex Serif', serif;
+  margin-bottom:30px;
+}
+ul {
+	list-style: none;
+  list-style-type: none;
+  padding-left:10px;
+  padding-top:15px;
+  padding-bottom:10px;
+  overflow: hidden;
+  border: 0px solid white;
+  background-color:white;
+  position:relative;
+   width:99%;
+   font-weight:bolder;
+}
+
+li {
+  display: inline-block;
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #7b52ad;
+  text-align: center;
+  padding: 8px 12px;
+  text-decoration: none;
+  position:relative;
+  font-family:  'IBM Plex Serif', serif;
+  font-size: 100%;
+  font-weight:bolder;
+}
+
+li a:hover:not(.home) {
+  background-color: #ddd;
+}
+
+li a.home {
+  color: white;
+  background-color: #7b52ad;
+  background-size:auto;
+}
+
+
+
+@media screen and (min-width: 375px){
+.carousel {
+    width:100%;
+    height:100%;
+    min-height:300px;
+    position:relative;
+    overflow:hidden;
+}
+.carousel-deck {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+}
+.carousel-slide {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    pointer-events:none;
+    z-index:1;
+    transition:opacity 0.4s;
+    transition-delay:0.4s;
+}
+.carousel-slide.active {
+    opacity:1;
+    pointer-events:initial;
+    z-index:2;
+    transition-delay:0s;
+}
+.carousel-control {
+    width:0em;
+    height:0em;
+    text-align:center;
+    line-height:2em;
+    font-family:monospace;
+    cursor:pointer;
+    border-radius:100%;
+    position:absolute;
+    bottom:1em;
+    z-index:30;
+    transition:all .5s;
+    color:white;
+    font-size:2vw;
+
+}
+@media screen and (min-width: 375px){
+
+.carousel-control-left {
+    left:1em;
+    margin-bottom:25%
+}
+.carousel-control-right {
+    right:1em;
+    margin-bottom:25%
+}
+}
+@media screen and (min-width: 375px){
+.hi{
+  font-size:3.5vw;
+}
+.h2{
+  font-size:2vw;
+}
+}
+
+@media screen and (min-width: 375px){
+.hero-image {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    pointer-events:none;
+    z-index:1;
+    transition:opacity 0.4s;
+    transition-delay:0.4s;
+}
+}
+@media screen and (min-width: 375px){
+.hero-image.active {
+   font-family:  'IBM Plex Serif', serif;
+  opacity:1;
+  pointer-events:initial;
+  z-index:2;
+  transition-delay:0s;
+}
+}
+@media screen and (min-width: 375px){
+.hero-text {
+   font-family:  'IBM Plex Serif', serif;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+}
+@media screen and (min-width: 375px){
+.hero-text .text {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  font-size:1vw;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  margin-top:16px;
+  text-decoration: none;
+  color:#483266;
+  background-color:white;
+}
+}
+@media screen and (min-width: 375px){
+.hero-text button:hover {
+}
+}
+@media screen and (min-width: 375px){
+.homepage5{
+  width:100%;
+  height:auto;
+  margin-top:-8%;
+  position:center;
+}
+}

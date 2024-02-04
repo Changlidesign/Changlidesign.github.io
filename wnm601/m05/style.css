@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<h1 id="myh1">Chang's first heading</h1>
+<h2 id="myh2">Chang's second heading.</h2>
+<h3 id="myh3">Shakespeare's Sonnets</h3>
+<p id="myp1">P1:From fairest creatures we desire increase,
+That thereby beauty's rose might never die,
+But as the riper should by time decease,
+His tender heir might bear his memory:
+But thou contracted to thine own bright eyes,
+Feed'st thy light's flame with self-substantial fuel,
+Making a famine where abundance lies.</p>
+<p id="myp2">P2:When forty winters shall besiege thy brow,
+And dig deep trenches in thy beauty's field,
+Thy youth's proud livery so gazed on now,
+Will be a tattered weed of small worth held:
+Then being asked, where all thy beauty lies,
+Where all the treasure of thy lusty days;
+To say within thine own deep sunken eyes,
+Were an all-eating shame, and thriftless praise.</p>
+<p id="myp3">P3:Those hours that with gentle work did frame
+The lovely gaze where every eye doth dwell
+Will play the tyrants to the very same,
+And that unfair which fairly doth excel:
+For never-resting time leads summer on
+To hideous winter and confounds him there,
+Sap checked with frost and lusty leaves quite gone.</p>
+<p id="myp4">P1:From fairest creatures we desire increase,
+That thereby beauty's rose might never die,
+But as the riper should by time decease,
+His tender heir might bear his memory:
+But thou contracted to thine own bright eyes,
+Feed'st thy light's flame with self-substantial fuel,
+Making a famine where abundance lies.</p>
+<p id="myp5">P2:When forty winters shall besiege thy brow,
+And dig deep trenches in thy beauty's field,
+Thy youth's proud livery so gazed on now,
+Will be a tattered weed of small worth held:
+Then being asked, where all thy beauty lies,
+Where all the treasure of thy lusty days;
+To say within thine own deep sunken eyes,
+Were an all-eating shame, and thriftless praise.
+</p>
+<p id="myp6">P3:Those hours that with gentle work did frame
+The lovely gaze where every eye doth dwell
+Will play the tyrants to the very same,
+And that unfair which fairly doth excel:
+For never-resting time leads summer on
+To hideous winter and confounds him there,
+Sap checked with frost and lusty leaves quite gone.</p>
+<br>
+<button type="button" onclick="myFunction1()">set p1's background color</button>
+<button type="button" onclick="myFunction2()">set p2's background color</button>
+<button type="button" onclick="myFunction3()">set p3's background color</button>
+<button type="button" onclick="myFunction4()">set three background colors</button>
+<style>
+table, th, td {
+  border: 2px solid blue;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+</style>
+</head>
+<body>
+<h2>Chang's schedule on weekend</h2>
+<table style="width:100%">
+  <tr>
+    <th>Time:</th>
+    <td>Saturday 14:30</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Event:</th>
+    <td>siesta</td>
+  </tr>
+  <tr>
+    <td>play video games</td>
+  </tr>
+</table>
+<form action="action_page.php"method="post/get">
+	<h3 id="myh3">No.1 : Your favorite food and drink?</h3>
+	<label>Your favourite food:</label><br>
+	<input type="text" name="Your favourite food" value="Hotpot">
+	<br>
+	Your favourite drink:<br>
+	<input type="text"name="Your favourite drink" placeholder="Black Tea">
+	<br>
+	<h3 id="myh3">No.2 : Your favorite day?</h3>
+	<input type="radio"name="pasta"value="Monday"checked >Monday
+	<br>
+	<input type="radio"name="pasta"value="Tuseday">Tuseday
+	<br>
+	<input type="radio"name="pasta"value="Wednesday">Wednesday
+	<br>
+	<input type="radio"name="pasta"value="Thursday">Thursday
+	<br>
+	<input type="checkbox"name="meal-request1"value="Friday">Friday
+	<br>
+	<input type="checkbox"name="meal-request2"value="Saturday">Saturday
+	<br>
+	<input type="checkbox"name="meal-request2"value="Sunday">Sunday
+	<br>
+	<h3 id="myh3">No.3 : Your favorite teacher?</h3>
+	<select name="animal">
+		<option value="Michael"selected>Michael</option>
+		<option value="Michael">Michael</option>
+		<option value="Michael">Michael</option>
+		<option value="Michael">Michael</option>
+	</select><br>
+	<h3 id="myh3">No.3 : Your favorite message?</h3>
+	Message<br>
+	<textarea name="body-message">Tell us about your favorite!</textarea>
+	<br><br>
+	<input type="submit"value="submit">
+</form>
+
+<script>
+  document.getElementById("myh1").style.color = "blue";
+  document.getElementById("myh1").style.fontSize="40px";
+  document.getElementById("myh2").style.color = "grey";
+   document.getElementById("myh2").style.backgroundColor = "yellow";
+    document.getElementById("myh3").style.fontSize="40px";
+function myFunction1() {
+  document.getElementById("myp1").style.backgroundColor = "green";
+}
+function myFunction2() {
+  document.getElementById("myp2").style.backgroundColor = "yellow";
+}
+function myFunction3() {
+  document.getElementById("myp3").style.backgroundColor = "red";
+}
+function myFunction4() {
+  document.getElementById("myp4").style.backgroundColor = "green";
+  document.getElementById("myp5").style.backgroundColor = "yellow";
+  document.getElementById("myp6").style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>

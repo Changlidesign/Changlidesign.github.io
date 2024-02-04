@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX Products</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- <script src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script> -->
+
+	<script src="js/products.js"></script>
+</head>
+<body>
+	<div>
+		<button class="js-sortdata" data-sort="date_create" data-order="DESC">Latest First</button>
+		<button class="js-sortdata" data-sort="date_create" data-order="ASC">Oldest First</button>
+		<button class="js-sortdata" data-sort="price" data-order="DESC">Highest Price</button>
+		<button class="js-sortdata" data-sort="price" data-order="ASC">Lowest Price</button>
+	</div>
+	<div class="container">
+		<div class="product-list row"></div>
+	</div>
+</body>
+
+<script type="text/template" id="product-item-template">
+<div class="col-sm-6 product-item">
+	<div class="product-name"><%= item %></div>
+	<div class="product-price">$<%= price %></div>
+</div>
+</script>
+
+</html>

@@ -1,0 +1,79 @@
+.carousel {
+    width:100%;
+    height:100%;
+    min-height:600px;
+    position:relative;
+    overflow:hidden;
+    margin-top:3%;
+}
+.carousel-deck {
+    width:100%;
+    height:100%;
+    position:absolute;
+    overflow:hidden;
+}
+.carousel-slide {
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    pointer-events:none;
+    z-index:1;
+    transition:opacity 0.4s;
+    transition-delay:0.4s;
+}
+.carousel-slide.active {
+    opacity:1;
+    pointer-events:initial;
+    z-index:2;
+    transition-delay:0s;
+}
+.carousel-control {
+    width:2em;
+    height:2em;
+    text-align:center;
+    line-height:2em;
+    font-family:monospace;
+    font-size:15px;
+    cursor:pointer;
+    border-radius:50%;
+    position:absolute;
+    bottom:1em;
+    z-index:3;
+    transition:all .5s;
+    margin-bottom:18%;
+}
+.carousel-control-left {
+    left:1em;
+}
+.carousel-control-right {
+    right:1em;
+}
+.carousel-control:hover {
+    background-color:rgba(255,255,255,1);
+}
+.hero-text{
+     width: 600px;
+  margin: auto;
+    color:black;
+    
+    margin-top:35%;
+    margin-left:75%;
+}
+.h1{
+    margin-left:18%;
+    margin-top:10%;
+    font-size:20px;
+}
+.h2{
+    margin-left:22%;
+    font-size:5px;
+}
+.text{
+     margin-left:38%;
+     color:grey;
+}

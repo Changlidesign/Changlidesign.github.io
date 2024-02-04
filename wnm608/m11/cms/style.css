@@ -1,0 +1,160 @@
+html {
+    background-color: #f1f1f1;
+}
+body {
+    font-family: verdana, serif;
+	color: #111111;
+    width: 1200px;
+    font-size: 13px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 1px 2px #292a30;
+    padding: 1.5rem;
+}
+section {
+    display: block;
+    width: 100%;
+}
+h1 {
+    text-align: center;
+}
+tr {
+    height: 55px;
+}
+.t1 {
+    text-align: left;
+    width: 120px;
+}
+.t2 {
+    text-align: left;
+    width: 140px;
+}
+.t3 {
+    text-align: left;
+    width: 175px;
+}
+.t4 {
+    text-align: left;
+    width: 75px;
+}
+.t5 {
+    text-align: center;
+    width: 100px;
+}
+.t6 {
+    text-align: left;
+    width: 125px;
+}
+.t6 img {
+    width: 50px;
+}
+.t7 {
+    text-align: left;
+    width: 90px;
+}
+.t8 {
+    text-align: left;
+    width: 50px;
+}
+.t9 {
+    text-align: left;
+    width: 50px;
+}
+.t9 ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav div {
+    display: block;
+    margin: 0 auto;
+    width: 26%;
+}
+h4 {
+    float: left;
+    margin-right: 1rem;
+}
+h2 {
+    text-align: center;
+}
+h4 a {
+	color: #660000;
+    text-decoration: none;
+}
+h4 a:hover {
+	color: #666666;
+    text-decoration: underline;
+}
+.rightLink {
+    padding-left: 30px;
+}
+form {
+    line-height: 2rem;
+    margin-left: 0;
+}
+form.addMatchForm {
+    line-height: 2rem;
+    margin-left: 9%;
+}
+form.addMatchForm label {
+    display: inline-block;
+    width: 9%;
+}
+form.addMatchForm select {
+    margin-right: 6%;
+}
+label {
+    display: inline-block;
+    width: 18%;
+}
+label ul {
+    list-style: none;
+    margin: 0;
+}
+footer p {
+    font-size: 10px;
+    text-align: right;
+}
+.signupButton a {
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 3px;
+    color: #000;
+    text-decoration: none;
+}
+.signupButton {
+    margin-left: 53.7%;
+}
+table {
+    margin: 0 auto;
+}
+.video img {
+    width: 300px;
+}
+.mapPage {
+    margin: 0 auto;
+    display: block;
+    width: 39%;
+}
+.captcha-image {
+    display: block;
+    margin-left: 11em;
+    margin-top: .6em;
+}
+input[type="submit"] {
+    margin-left: 0;
+}
+#photo {
+    margin-left: 12.2em;
+}
+.updateSubmit {
+    margin-left: 0 !important;
+}
+.mainImage {
+    width: 50px;
+    vertical-align: bottom;
+}

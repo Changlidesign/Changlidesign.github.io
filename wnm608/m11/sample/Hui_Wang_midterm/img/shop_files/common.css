@@ -1,0 +1,138 @@
+* {
+	box-sizing:border-box;
+}
+
+body {
+	margin:0;
+	font-size:100%;
+}
+
+a {
+	color:inherit;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+
+/* COMMON CLASSES */
+
+.container {
+	max-width:100vw;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
+	margin-top: 100px;
+}
+.container_guide {
+	max-width:100vw;
+	height: 70vh;
+	margin-right: auto;
+	margin-left: auto;
+/*	margin-bottom: 100px;
+	margin-top: 100px;*/
+	padding-left: 10vw;
+}
+
+.centered-child {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform:translate(-50%, -50%);
+	-webkit-transform:translate(-50%, -50%);
+}
+
+
+
+.flex-parent {
+	display:-webkit-flex;
+	display:flex;
+}
+.flex-child {
+	flex:1 1 auto;
+}
+.flex-none {
+	flex:none;
+}
+
+
+
+.card {
+	background-color:white;
+	padding:10px;
+	border-radius:5px;
+	margin:1em 0;
+	box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+}
+.card>:first-child {
+	margin-top:0;
+}
+.card>:last-child {
+	margin-bottom:0;
+}
+.view-window1 {
+	margin-top: 50px;
+	height:80vh;
+	width: 100vw;
+	background-size: cover;
+	background-attachment:fixed;
+	position:relative;
+}
+
+.view-window {
+	height:120vh;
+	width: 100vw;
+	background-size: cover;
+	background-attachment:fixed;
+	position:relative;
+}
+.view-window-box {
+	height:calc(50vh - 100px);
+	width:calc(50vw - 100px);
+	text-align:center;
+}
+.view-description {
+	position:absolute;
+	width: 50vw;
+	background-color: rgba(238,238,238,0.7);
+}
+.view-window-box img {
+	max-height:100%;
+	max-width:100%;
+}
+.view-window>img {
+	max-height:calc(100% - 100px);
+	max-width:calc(100% - 100px);
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%, -50%);
+}
+
+
+.dual-box img{
+	max-width:100%;
+}
+.dual-box .box {
+	width:50%;
+	flex:1 1 auto;
+	padding:30px;
+	position: relative;
+}
+.dual-box h2, 
+.dual-box p {
+	margin:0;
+}
+.dual-box .flipped .box:nth-child(1) {
+	order: 2;
+}
+.dual-box .flipped .box:nth-child(2) {
+	order: 1;
+}
+
+@media (max-width: 500px) {
+	.view-window {
+	height:60vh;
+}

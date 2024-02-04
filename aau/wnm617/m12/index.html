@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hamster Track</title>
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<link rel="stylesheet" href="lib/css/jquery.mobile.structure-1.4.5.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	
+	<script src="lib/js/jquery-2.2.4.min.js"></script>
+
+	<script src="js/functions.js"></script>
+	<script src="js/templates.js"></script>
+	<script src="js/login.js"></script>
+	<script src="js/maps.js"></script>
+	<script src="js/pages.js"></script>
+
+	<script src="js/app.js"></script>
+	
+	<script src="lib/js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7YuW-2jTYQ6Jeb7zxYLsBdYHr6pgyKiY"async defer></script>
+</head>
+<body>
+
+	
+
+	<section data-role="page" id="login-page">
+		<div class="loginpage" data-role="main">
+		<form id="login-form" data-ajax="false" class="firstpage">
+		<img src="img/logo.png" class="logo">
+		<input type="text" placeholder="Username" data-role="none"  id="login-username">
+		<input type="password" placeholder="Password" data-role="none" id="login-password">
+		<div>
+		<input type="submit" class="login" value="Log In" data-role="none"></div>
+		<div class="signup">
+		<a href="#signup-page" class="login-button-one"><small>Sign Up</small></a>
+		</div>
+		</div>
+		</form>
+		</div>
+	</section>
+	
+
+	<section data-role="page" id="signup-page">
+	<div data-role="main">
+	<form id="signup-form" class="firstpage">
+	<div class="form-control">
+					<label for="signup-username" class="form-label">User Name</label>
+					<input class="form-input" type="text" placeholder="Type your Username" data-role="none" id="signup-username">
+				</div>
+				<div class="form-control">
+					<label for="signup-email" class="form-label">Email</label>
+					<input class="form-input" type="email" placeholder="Type your Email" data-role="none" id="signup-email">
+				</div>
+				<div class="form-control">
+					<label for="signup-password" class="form-label">Password</label>
+					<input class="form-input" type="password" placeholder="Type your Password" data-role="none" id="signup-password">
+				</div>
+				<div class="form-control">
+					<label for="signup-password2" class="form-label">Confirm Password</label>
+					<input class="form-input" type="password" placeholder="Confirm your Password" data-role="none" id="signup-password2">
+				</div>
+	<div class="form-control">
+					<button type="submit" class="signup-button">Sign Up</button>
+				</div>
+				<div class="form-control text-center">
+					<a href="#login-page" class="login-button"><small>Log In</small></a>
+				</div>
+	</form>
+	</div>
+	</section>
+
+	
+
+
+	<section data-role="page" id="recent-page">
+
+	<!-- <header data-role="header">
+	<ul>
+	<li><input type="text" placeholder="Search for a hamster" data-role="none" class="searchhamster">
+	</li>
+	<li class="flex-stretch"></li>
+	<li>
+	<a href="#add-new-hamster">
+	<img src="img/add.png" class="image-icon">
+	</a>
+	</li>
+	</ul>
+	</header> -->
+
+		<div data-role="main">
+		
+
+			<div class="recent-map"></div>
+
+			<div class="add circle right bottom">
+				<a href="#recent-add-choice-page">
+					<img src="img/add.png" class="image-icon"></a>
+			</div>
+
+		</div>
+		
+
+	<!-- <div class="basin">
+		<a href="#animal-profile-page" class="display-flex">
+			<img src="img/hamsterone.png" class="hamstermap">
+				<h1 class="titlemap">Grey Dwarf Hamster</h1>
+		</a>
+	</div>
+		<div class="modal" id="list-edit-modal">
+			<div class="modal-back" data-deactivate="#list-edit-modal"></div>
+		</div>
+	</div> -->
+		<footer data-role="footer" data-template="#footer-nav-template"></footer>
+	</section>
+	
+	<section data-role="page" id="recent-add-choice-page">
+		<header data-role="header">
+			<h1>Choose Animal</h1>
+			<ul>
+				<li><a href="#" data-rel="back">Cancel</a></li>
+				<li class="flex-stretch"></li>
+				<li><a href="#add-location-page">Next</a></li>
+			</ul>
+		</header>
+		<div data-role="main">
+			<a href="#add-animal-page">Add New Animal</a>
+			<br>
+			Or
+			<br>
+			<select name="" id="" class="form-input">
+				<option value="">Cat 1</option>
+				<option value="">Cat 2</option>
+				<option value="">Dog 1</option>
+			</select>
+		</div>
+	</section>
+
+	<section data-role="page" id="add-animal-page">
+		<header data-role="header">
+			<h1>Add Animal</h1>
+			<ul>
+				<li><a href="#" data-rel="back">Back</a></li>
+				<li class="flex-stretch"></li>
+				<li><a href="#add-location-page">Next</a></li>
+			</ul>
+		</header>
+		<div data-role="main">
+			<form data-ajax="false" id="add-animal-form">
+				<div class="form-control">
+					<label for="add-animal-name" class="form-label">Animal Name</label>
+					<input class="form-input" type="text" placeholder="Type your Animal Name" data-role="none" id="add-animal-name">
+				</div>
+				<div class="form-control">
+					<label for="add-animal-type" class="form-label">Animal Type</label>
+					<!-- <input class="form-input" type="text" placeholder="Type your Animal Type" data-role="none" id="add-animal-type"> -->
+					<select id="add-animal-type" class="form-input" data-role="none">
+						<option value="cat">Cat</option>
+						<option value="dog">Dog</option>
+						<option value="horse">Horse</option>
+						<option value="bird">Bird</option>
+						<option value="rat">Rat</option>
+					</select>
+				</div>
+				<div class="form-control">
+					<label for="add-animal-breed" class="form-label">Animal Breed</label>
+					<input class="form-input" type="text" placeholder="Type your Animal Breed" data-role="none" id="add-animal-breed">
+				</div>
+			</form>
+		</div>
+	</section>
+
+	<section data-role="page" id="add-location-page">
+		<div data-role="main" class="profile">
+			<div class="nav nav-air top center flush">
+					
+						<div data-role="main" class="backthree"></div>
+						<ul class="back">
+		<li class="backtwo"><a href="#" data-rel="back">
+			<img src="img/back.png" style="width: 55px;margin-top: 3px;margin-left: -20px;">
+		</a>
+			</li>
+		<li class="backtwo"><a href="#list-page">
+		</a>
+	</li>
+		<li class="backtwo"><a href="#animal-profile-page" class="js-addlocation">
+			<img src="img/dui.png" style="width: 55px;margin-top: 3px;margin-left: -20px;">
+		</a>
+		</li>
+	</ul>
+	</div>
+	<div class="chooselocation" div data-role="main">
+		<!-- <header data-role="header">
+			<h1>Choose Location</h1>
+			<ul>
+				<li><a href="#" data-rel="back">Back</a></li>
+				<li class="flex-stretch"></li>
+				<li><a href="#list-page" class="js-addlocation">Finish</a></li>
+			</ul>
+
+		</header> -->
+		
+			<input type="hidden" id="add-location-lat">
+			<input type="hidden" id="add-location-lng">
+			<div class="recent-map"></div>
+
+			<!-- <div class="marker">
+				<img src="img/marker.svg" alt="" class="icon">
+			</div> -->
+		</div></div>
+	</section>
+
+	<section data-role="page" id="add-description-page">
+		<header data-role="header">
+			<h1>Description</h1>
+			<ul>
+				<li><a href="#" data-rel="back">Back</a></li>
+				<li class="flex-stretch"></li>
+				<li><a href="#list-page" class="js-addlocation">Finish</a></li>
+			</ul>
+		</header>
+		<div data-role="main"><div class="scrollable">
+
+			<div class="form-control" style="padding:0 1em">
+				<label for="add-location-description" class="form-label">Description of Animal</label>
+				<textarea id="add-location-description" cols="30" rows="10" placeholder="description" class="form-input"></textarea>
+			</div>
+		</div></div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+
+
+	<section data-role="page" id="list-page">
+
+
+		<div data-role="main">
+			<div class="scrollable">
+
+
+				<!-- ul>li*10>{Dog $} -->
+				<ul class="animallist">
+				</ul>
+			</div>
+			<div class="add circle right bottom">
+				<a href="#" data-activate="#list-add-modal">
+					<img src="img/add.png" class="image-icon"></a>
+			</div>
+		</div>
+
+				
+		<footer data-role="footer" data-template="#footer-nav-template"></footer>
+		<div class="modal" id="list-add-modal">
+			<div class="modal-back" data-deactivate="#list-add-modal"></div>
+			<form data-ajax="false" id="list-add-form" class="modal-popup">
+				<div class="modal-head">
+					Add  a new hamster
+				</div>
+				<div class="modal-body">
+					<div class="form-control">
+						<label for="list-add-name" class="form-label">Hamster Name</label>
+						<input class="form-input" type="text" placeholder="Type your Hamster Name" data-role="none" id="list-add-name">
+					</div>
+					<div class="form-control">
+						<label for="list-add-type" class="form-label">Hamster Type</label>
+						<select id="list-add-type" class="form-input" data-role="none">
+							<option value="Yellow Hamster">Yellow Hamster</option>
+							<option value="Grey Dwarf Hamster">Grey Dwarf Hamster</option>
+							<option value="Teddy Bear Hamster">Teddy Bear Hamster</option>
+							<option value="White Dwarf Hamster">White Dwarf Hamster</option>
+							<option value="Golden Hamster">Golden Hamster</option>
+						</select>
+					</div>
+					<div class="form-control">
+						<label for="list-add-breed" class="form-label">Hamster Color</label>
+						<input class="form-input" type="text" placeholder="Type your Hamster Color" data-role="none" id="list-add-color">
+					</div>
+					<div class="form-control">
+						<label for="list-add-description" class="form-label">Hamster Details</label>
+						<textarea class="form-detail" placeholder="Type your Hamster Details" data-role="none" id="list-add-description"></textarea>
+					</div>
+				</div>
+				
+				<button type="submit" class="modal-foot" data-role="none" data-deactivate="#list-add-modal">Submit</button>
+			</form>
+		</div>
+
+	</section>
+
+
+
+	
+
+	<section data-role="page" id="animal-profile-page">
+		<div data-role="main" class="hprofile">
+			<div class="nav nav-air top center flush">
+				<ul class="back">
+					<li class="backtwo"><a href="#list-page">
+						<img src="img/back.png" style="width: 55px;margin-top: 3px;margin-left: -10px;"></a></li>
+					<li class="backtwo"><a href="#list-page"></a></li>
+					<li class="backtwo"><a href="#edit-animal-page">
+					<img src="img/edit.png" style="width: 45px;text-align: center;margin-top: 10px;"></a></li>
+				</ul>
+			</div>
+
+			<div  class="hamsterprofile" >
+					<div class="scrollable-Jony">
+					</div>
+					<nav class="profile-nav nav-tabs">
+				<ul>
+					<li class="Details"><a href="#">Details</a></li>
+					<li class="active"><a href="#">Location</a></li>
+				</ul>
+			</nav>
+			<div class="profile-bottom">
+				<div class="profile-map">
+					<div class="map"></div>
+				<div class="animaladd circle right bottom">
+						<a href="#add-location-page">
+					<img src="img/add.png" class="image-icon"></a>
+					</div>
+					
+				</div>
+				<div class="profile-description"></div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- <section data-role="page" id="edit-page">
+		<div data-role="main" class="hprofile">
+			<div class="nav nav-air top center flush">
+					
+						<div data-role="main" class="backthree"></div>
+						<ul class="back">
+		<li class="backtwo"><a href="#" data-rel="back">
+			<img src="img/back.png" style="width: 55px;margin-top: 3px;margin-left: -20px;">
+		</a>
+			</li>
+		<li class="backtwo"><a href="#list-page">
+		</a>
+	</li>
+		<li class="backtwo">
+		</li>
+	</ul>
+					
+				</div>
+					
+			
+				<div class="hamsterprofile" div data-role="main">
+					<div class="scrollable-chang">
+					<form >
+						<div class="form-control">
+						<img src="img/one.jpg" class="one">
+					</div>
+						
+
+				
+			
+			
+				<div class="form-control">
+					<label for="signup-username" class="form-label">Hamster Name</label>
+					<input class="form-input" type="text" value="Jony" data-role="none" id="hamstername">
+				</div>
+				<div class="form-control">
+					<label for="signup-username" class="form-label">Hamster Type</label>
+					<input class="form-input" type="text" value="Grey Dwarf Hamster" data-role="none" id="hamstertype">
+				</div>
+				<div class="form-control">
+					<label for="signup-username" class="form-label">Hamster Color</label>
+					<input class="form-input" type="text" value="Grey and White" data-role="none" id="hamstercolor">
+				</div>
+				<div class="form-control">
+					<label for="signup-username" class="form-label">Hamster Details</label>
+					<input class="form-input" type="text" value="Details: Small, short and he is playing" data-role="none" id="hamsterdetails">
+				</div>
+				<div class="form-control">
+					<a href="#" data-rel="back" class="form-button">Save</a>
+				</div>
+			</form></div>
+		</div>
+		</div>
+		</div>
+	</section> -->
+
+	
+
+	<section data-role="page" id="profile-page">
+		<div data-role="main" class="profile">
+			<div class="nav nav-air top center flush">
+					
+						<div data-role="main" class="backthree"></div>
+						<ul class="back">
+		<li class="backtwo"><a href="#" class="js-logout">
+			<img src="img/signout.png" style="width: 55px;margin-top: 5px;margin-left: -10px;">
+		</a>
+			</li>
+		<li class="backtwo"><a href="#list-page">
+		</a>
+	</li>
+		<li class="backtwo"><a href="#edit-user-page">
+			<img src="img/edit.png" style="width: 45px;text-align: center;margin-top: 10px;"></a>
+		</li>
+	</ul>
+					
+				</div>
+
+			
+				<div class="hamsterprofile" div data-role="main">
+					<div class="scrollable-Jony"></div>
+				</div>
+						
+		</div>
+		<footer data-role="footer" data-template="#footer-nav-template"></footer>
+	</section>
+
+	
+
+	<section data-role="page" id="edit-user-page">
+		<div data-role="main" class="profile">
+			<div class="nav nav-air top center flush">
+					
+						<div data-role="main" class="backthree"></div>
+						<ul class="back">
+		<li class="backtwo"><a href="#" data-rel="back">
+			<img src="img/back.png" style="width: 55px;margin-top: 3px;margin-left: -20px;">
+		</a>
+			</li>
+		<li class="backtwo"><a href="#list-page">
+		</a>
+	</li>
+		<li class="backtwo">
+		</li>
+	</ul>
+	</div>
+	<div class="hamsterprofile" div data-role="main">
+		<div class="scrollable">
+			<div class="edit-form"></div>
+		</div></div>
+	</section>
+	
+
+	<section data-role="page" id="edit-animal-page">
+		<div data-role="main" class="profile">
+			<div class="nav nav-air top center flush">
+					
+						<div data-role="main" class="backthree"></div>
+						<ul class="back">
+		<li class="backtwo"><a href="#" data-rel="back">
+			<img src="img/back.png" style="width: 55px;margin-top: 3px;margin-left: -20px;">
+		</a>
+			</li>
+		<li class="backtwo"><a href="#list-page">
+		</a>
+	</li>
+		<li class="backtwo">
+		</li>
+	</ul>
+	</div>
+	<div class="hamsterprofile" div data-role="main">
+		<div class="scrollable">
+			<div class="edit-form"></div>
+		</div></div>
+	</section>
+
+
+
+
+
+
+	<script type="text/template" id="footer-nav-template">
+	<ul>
+		<li><a href="#recent-page">
+			<img src="img/Location.png" style="width: 45px;margin-top: 10px;"></a>
+			</li>
+		<li><a href="#list-page">
+		<img src="img/hamster.png" style="width: 45px;margin-top: 20px;"></a>
+	</li>
+		<li><a href="#profile-page">
+			<img src="img/heart.png" style="width: 40px;text-align: center;margin-top: 12px;"></a>
+		</li>
+	</ul>
+	</script>
+	
+</body>
+</html>
