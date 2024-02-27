@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gantt Chart</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  .gantt-chart {
+    border: 1px solid #ccc;
+    width: 1000px; /* Adjust width as needed */
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+
+  .gantt-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .gantt-row:last-child {
+    border-bottom: none;
+  }
+
+  .gantt-item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 150px; /* Adjust width as needed */
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #ccc;
+  }
+
+  .gantt-item:last-child {
+    border-right: none;
+  }
+
+  .gantt-item span {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .gantt-bar {
+    height: 20px;
+    background-color: #007bff; /* Adjust color as needed */
+  }
+</style>
+</head>
+<body>
+
+<div class="gantt-chart">
+  <div class="gantt-row">
+    <div class="gantt-item">
+      <span>Task 1</span>
+      <div class="gantt-bar" style="width: 50%;"></div>
+    </div>
+    <div class="gantt-item">
+      <span>Task 2</span>
+      <div class="gantt-bar" style="width: 70%;"></div>
+    </div>
+    <div class="gantt-item">
+      <span>Task 3</span>
+      <div class="gantt-bar" style="width: 30%;"></div>
+    </div>
+  </div>
+  <div class="gantt-row">
+    <div class="gantt-item">
+      <span>Task 4</span>
+      <div class="gantt-bar" style="width: 80%;"></div>
+    </div>
+    <div class="gantt-item">
+      <span>Task 5</span>
+      <div class="gantt-bar" style="width: 60%;"></div>
+    </div>
+    <div class="gantt-item">
+      <span>Task 6</span>
+      <div class="gantt-bar" style="width: 40%;"></div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
