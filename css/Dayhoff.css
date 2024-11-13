@@ -1,0 +1,221 @@
+.logesize{
+
+	width:100%;
+}
+
+.logosection{
+
+padding-top: 100px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.title{
+
+    padding: 20px 100px;
+    padding-bottom: 40px;
+
+
+}
+
+.wowh1{
+	font-size: 47px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: 600;
+}
+
+.wowh2{
+	font-size: 23px;
+    margin-top: -20px;
+    font-family: "Poppins", sans-serif;
+    color: #9c9c9c;
+    font-weight: normal;
+}
+
+
+
+.wowh3{
+	font-size: 35px;
+    font-family: "Poppins", sans-serif;
+    color: #845237;
+    font-weight: 600;
+}
+
+
+.wowh4{
+	font-size: 20px;
+	margin-top: -10px;
+    font-family: "Poppins", sans-serif;
+    color: #ffad38;
+    font-weight: 500;
+}
+
+.wowconcept{
+
+ 
+    
+    padding: 30px;
+
+
+}
+
+
+
+
+
+.wowq{
+
+    font-size: 26px;
+    font-family: "Poppins", sans-serif;
+    color: #2B5CC6;
+    font-weight: 600;
+
+
+}
+
+.teamq{
+
+
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #96a7f3;
+    font-weight: 600;
+
+
+}
+
+.competitorsnumber{
+
+
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: #845237;
+    font-weight: 600;
+
+
+
+
+}
+
+.competitorstitle{
+
+
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: black;
+    font-weight: 600;
+
+
+
+
+}
+
+
+.teamtext{
+
+
+
+    font-size: 14px;
+    
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: normal;
+
+
+
+}
+.competitorstext{
+
+    font-size: 15px;
+    
+   font-family: "Poppins", sans-serif;
+    color: #a2a2a2;
+    font-weight: normal;
+
+
+}
+
+
+.wowtext{
+
+    font-size: 16px;
+	
+    font-family: "Poppins", sans-serif;
+    color: #000000;
+    font-weight: normal;
+
+
+}
+
+
+.problemtext{
+
+    font-size: 22px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+
+
+}
+
+.personatext{
+
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #696969;
+    font-weight: normal;
+
+
+}
+
+.personap{
+
+    font-size: 18px;
+    margin-top: -10px;
+    font-family: "Poppins", sans-serif;
+    color: #292929;
+    font-weight: normal;
+
+
+}
+
+
+.whole{
+
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1165px;
+    padding: 0 30px;
+
+
+}
+.teamconcept{
+
+ 
+
+     max-width: 700px;
+
+
+
+}
+
+.problemconcept{
+
+ 
+    background-color: #845237;
+    padding: 20px;
+    margin-top: 50px
+
+
+}
+
+
+.about {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1165px;
+padding: 0 30px;
+}
