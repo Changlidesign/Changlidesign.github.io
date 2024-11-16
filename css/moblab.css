@@ -24,8 +24,11 @@ padding-top: 100px;
     font-family: "Poppins", sans-serif;
     color: black;
     font-weight: 600;
+    text-decoration: none;
 }
-
+.wowh1:hover{
+    color: #EE2A49;
+}
 .wowh2{
 	font-size: 23px;
     margin-top: -20px;
